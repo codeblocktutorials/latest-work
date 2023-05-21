@@ -1,0 +1,275 @@
+
+/* lets style each components one by one and make each responsive */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    color: #f4f4f4;
+    background: #071d2b;
+    border-bottom: 3px solid #a52a2a;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* our header logo */
+
+header .branding a{
+    font-size: 24px;
+    text-decoration: none;
+    letter-spacing: 1.2;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+
+/* our header Nav */
+header ul{
+    display: flex;
+}
+
+header ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+
+header ul li a{
+    color: #f4f4f4;
+    margin: 5px 20px;
+    text-decoration: none;
+}
+
+/* End of Header section */
+
+section{
+    padding:100px;
+    overflow: hidden;
+}
+
+.banner{
+    background: url(./us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 400px;
+    text-align: center;
+    color: #fff;
+}
+
+.banner h2{
+    padding-top: 100px;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.banner p{
+    font-size: 18px;
+}
+
+
+/* Newsletter start here */
+
+.newsletter{
+    background: #063b5c;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    color: white;
+}
+
+input[type='email']{
+    padding: 5px;
+    height: 25px;
+    width: 250px;
+}
+
+input[type='submit']{
+    padding: 5px;
+    cursor: pointer;
+    background: #a52a2a;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+}
+
+input[type='file']{
+    margin: 10px;
+    
+}
+
+
+input[type='button']{
+    padding: 10px 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    background: #071d2b;
+}
+
+/* Newsletter ends here */
+
+.boxes .content{
+    display: flex;
+    gap: 10px;
+}
+
+.box img{
+    width: 150px;
+}
+
+.box{
+    text-align: center;
+}
+
+.box p{
+    padding-top: 5px;
+}
+
+/* boxes section end here */
+
+.footer{
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: #071d2b;
+}
+
+
+
+/* For About Us page */
+.article{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.object{
+    background: #071d2b;
+    color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.object h2{
+    padding-bottom: 10px;
+}
+
+/* how about we apply it to second paragraph */
+
+
+/* i think its nice */
+/* now about us */
+
+
+.offers li{
+    list-style-type: none;
+    padding: 20px;
+    border: 2px solid #ccc;
+    background: #e6e6e6;
+    margin-bottom: 20px;
+}
+
+.offers h2, .offers p{
+    margin-bottom: 10px;
+}
+
+.article form{
+    width: 95%;
+    height: 300px;
+}
+
+.article input[type ='email'], input[type ='name'], textarea{
+    width: 95%;
+}
+
+
+/* for the responsiveness */
+
+/* so we can know which page we are on */
+.current{
+    background: #a52a2a;
+    padding: 2px;
+}
+
+
+@media (max-width:768px){
+    header{
+        display: block;
+        text-align: center;
+    }
+
+    header ul {
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    section {
+        padding: 49px;
+    }
+
+    .banner h2 {
+        font-size: 2.3em;
+    }
+
+    .newsletter {
+        display: block;
+        text-align: center;
+        margin: auto;
+        padding: 10px 20px;
+        
+    }
+
+    input[type='email'], input[type='submit'] {
+        padding: 5px;
+        width: 85%;
+        margin-bottom: 10px;
+        text-align: center;
+        
+    }
+
+    .heading h2{
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .boxes .content {
+    
+        display: block;
+    }
+
+    .box {
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .article{
+        display: block;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

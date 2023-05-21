@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple Responsive Design</title>
+</head>
+<body>
+    
+    <header>
+        <div class="branding">
+            <a href="index.html">Reelspecial</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="current"><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="offers">
+        <div class="article">
+            <ul>
+                <li>
+                    <h1>Website Design</h1>
+                    <p>
+                        We offer professional web design and hosting services. Our expert team creates captivating websites tailored to your brand, while ensuring reliable and secure hosting for optimal performance. Elevate your online presence with our comprehensive solutions.
+</p>
+                    <p>Price: $70 - $900</p>
+                </li>
+
+
+                <li>
+                    <h1>Website Maintenace</h1>
+                    <p>We provide comprehensive website maintenance services, 
+                        including customization, bug fixes, speed optimization, backup & migration, 
+                        installation, and security. Our expertise ensures your website remains secure, 
+                        optimized, and tailored to your needs.
+                    </p>
+                    <p>Price: $150 per Month</p>
+                </li>
+
+
+                <li>
+                    <h1>Video Editing & Youtube Channel Handling</h1>
+                    <p>We specialize in video editing and YouTube channel management. Our skilled team excels at editing or creating engaging videos and motion graphics. We also handle thumbnail creation and post scheduling, ensuring your content stands out 
+                        and reaches your audience at the right time. Let us enhance your YouTube channel with professional editing and strategic management.
+                    </p>
+                    <p>Price: $150 - $300</p>
+                </li>
+            </ul>
+
+
+
+            <form action="POST" class="object" data-netlify = 'true'>
+
+                <div>
+                    <label for="">Name</label> <br>
+                    <input type="Name" placeholder="Enter Your Name" name="name" id="name">
+                </div>
+
+                <div>
+                    <label for="">Email</label> <br>
+                    <input type="email" placeholder="Enter Your Email" name="email" id="email">
+                </div>
+
+                <div>
+                    <label for="">Message</label> <br>
+                    <textarea name="message" id="" cols="5" rows="5" id="message">Leave Us a Message</textarea>
+                </div>
+                
+                <div>                   
+                    <input type="file" id="myfile" cols="myfile" placeholder="No file chosen"> <br>
+                </div>
+
+                <div class="field">
+                    <div data-netlify-recaptcha="true"></div>
+                </div>
+
+                <input type="submit" value=" Send Message">
+
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+    
+    <section class="footer">
+        <p>Designed by codeblock &copy; 2020</p>
+    </section>
+
+</body>
+</html>
