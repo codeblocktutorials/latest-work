@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Simple Responsive Design</title>
+
 </head>
 <body>
     
@@ -33,9 +38,9 @@
     <!-- Section banner begins here -->
     <section class="banner">
         <div class="textBox">
-            <h2>ADELEYE OLALEKAN MATTEAW</h2>
+            <h2 class="animate__animated animate__fadeInRight">ADELEYE OLALEKAN MATTEAW</h2>
             
-            <p>Experienced Frontend Developer with Knowledge in Design, Development, 
+            <p class="animate__animated animate__fadeInLeft">Experienced Frontend Developer with Knowledge in Design, Development, 
                 Server and Database. Skilled in creating visually appealing user interfaces and 
                 delivering seamless user experiences.I am proficient in modern JavaScript, PHP and React. I also have a strong problem-solving, sound communication abilities and i deliver projects on time</p>
         </div>
@@ -61,7 +66,7 @@
                 <!-- for the images -->
                 <img src="./logo_brush.png" alt="Graphic design">
                 <h1>Photoshop/Video Editing</h1>
-                <p>I excel at video editing, expertly trimming, adding captivating captions, subtitles, and effects to bring out the best in recorded videos.</p>
+                <p class="animated slideInTop">I excel at video editing, expertly trimming, adding captivating captions, subtitles, and effects to bring out the best in recorded videos.</p>
                 <input type="button" value="view now" onclick="window.location.href='https://www.youtube.com/watch?v=V_YKsspJbko';">
             </div>
             
@@ -82,9 +87,77 @@
         </div>
     </section>
 
+
+    <!-- modalssss -->
+    <div id="my-modal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Welcome to Reelspecial</h2>
+          </div>
+          <div class="modal-body">
+            <p>Please subscribe to our channel</p>
+            <p>Subscribe to my YouTube channel for programming courses! Learn JavaScript, React, animation, graphics, video editing, and more! Join now!.</p>
+            <a href="https://www.youtube.com/channel/UCbqyLuwMPPAVSneXnup1WVQ?sub_confirmation=1">Click Here</a>
+          </div>
+          <div class="modal-footer">
+            <h3>Be part of our Friends</h3>
+          </div>
+        </div>
+      </div>
+
+
+
     <section class="footer">
         <p>Designed by Reelspecial &copy; 2022</p>
     </section>
+
+
+
+
+    <script>
+
+
+// Get DOM Elements
+const modal = document.querySelector('#my-modal');
+const modalBtn = document.querySelector('#modal-btn');
+const closeBtn = document.querySelector('.close');
+
+
+// Events
+window.onload(setTimeout(openModal, 4000),
+closeBtn.addEventListener('click', closeModal)
+);
+window.addEventListener('click', outsideClick);
+
+// Open
+
+
+function openModal() {
+
+  modal.style.display = 'block';
+}
+
+// Close
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+// Close If Outside Click
+function outsideClick(e) {
+  if (e.target == modal) {
+    modal.style.display = 'none';
+  }
+}
+
+
+
+
+
+
+
+
+    </script>
 
 </body>
 </html>

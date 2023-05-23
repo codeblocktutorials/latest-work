@@ -199,7 +199,9 @@ input[type='button']{
 .current{
     background: #a52a2a;
     padding: 2px;
+    
 }
+
 
 
 @media (max-width:768px){
@@ -260,6 +262,78 @@ input[type='button']{
 
 }
 
+.modal a{
+    
+    padding: 1px;
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+
+/* modals */
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    transition: all 2s ease-in;
+  }
+  
+  .modal-content {
+    margin: 10% auto;
+    width: 60%;
+  }
+  
+  .modal-header h2,
+  .modal-footer h3 {
+    margin: 0;
+  }
+  
+  
+  .modal-header {
+    background-color: #1676b1;
+    padding: 15px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .modal-body {
+    padding: 10px 20px;
+    background: #cbc1c1;
+  }
+  
+  .modal-footer {
+    background-color: #0f689f;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    color: #fff;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
 
 
 
