@@ -63,16 +63,16 @@
              <div class="animate__animated animate__fadeInRight">
 
              
-            <form action="POST" class="object" data-netlify ='true'>
+            <form action="https://formsubmit.co/olalekanadeleye@gmail.com" method="POST"  class="object">
 
                 <div>
                     <label for="">Name</label> <br>
-                    <input type="Name" placeholder="Enter Your Name" name="name" id="name">
+                    <input type="Name" placeholder="Enter Your Name" name="name" id="name" required/>
                 </div>
 
                 <div>
                     <label for="">Email</label> <br>
-                    <input type="email" placeholder="Enter Your Email" name="email" id="email">
+                    <input type="email" placeholder="Enter Your Email" name="email" id="email" required/>
                 </div>
 
                 <div>
@@ -81,12 +81,9 @@
                 </div>
                 
                 <div>                   
-                    <input type="file" id="myfile" cols="myfile" placeholder="No file chosen"> <br>
+                    <input type="hidden" name="_captcha" value="false"> <br>
                 </div>
 
-                <div class="field">
-                    <div data-netlify-recaptcha="true"></div>
-                </div>
 
                 <input type="submit" value=" Send Message">
 
